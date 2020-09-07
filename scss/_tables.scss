@@ -1,0 +1,25 @@
+/*===========================================================
+* Settings and Styles for the "Table Section of the web-page
+============================================================*/
+
+table, td, th {  
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: #FFA62E;
+    color: #fff;
+}

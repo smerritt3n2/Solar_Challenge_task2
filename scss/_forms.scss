@@ -1,0 +1,30 @@
+/*===========================================================
+* Settings and Styles for the "Form Section of the web-page
+============================================================*/
+
+h1 {
+    text-align: center;
+    color: #222;
+    text-shadow: 0px 2px 3px #fff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    select {margin-bottom: 1em;}
+    input {
+        width: 20em;
+        height: 2em;
+        margin-bottom: 1em;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+}
