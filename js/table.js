@@ -42,12 +42,12 @@ if (car6 == null) {
  /*============================================================================*/
 
  let carlist = [
-    { "Car Type": car1[0], "Registration": car1[1], "Current Miles": car1[2], "Miles Remaining": car1[3], "Schedule leaving": car1[4], "Percentage Remaining": car1[5]}, /* Displays the data stored in the Array that is within "Column 1" to "Column 4" */
-    { Car_Type: car2[0], Registration: car2[1], Current_Miles: car2[2], Miles_Remaining: car2[3], Schedule_leaving: car2[4], battery_remaining: car2[5] },
-    { Car_Type: car3[0], Registration: car3[1], Current_Miles: car3[2], Miles_Remaining: car3[3], Schedule_leaving: car3[4], battery_remaining: car3[5] },
-    { Car_Type: car4[0], Registration: car4[1], Current_Miles: car4[2], Miles_Remaining: car4[3], Schedule_leaving: car4[4], battery_remaining: car4[5] },
-    { Car_Type: car5[0], Registration: car5[1], Current_Miles: car5[2], Miles_Remaining: car5[3], Schedule_leaving: car5[4], battery_remaining: car5[5] },
-    { Car_Type: car6[0], Registration: car6[1], Current_Miles: car6[2], Miles_Remaining: car6[3], Schedule_leaving: car6[4], battery_remaining: car6[5] }
+    { "Car Type": car1[0], "Registration": car1[1], "Current Miles": car1[2], "Miles Remaining": car1[3], "Destination Miles": car1[4], "Schedule leaving": car1[5]}, /* Displays the data stored in the Array that is within "Column 1" to "Column 4" */
+    { Car_Type: car2[0], Registration: car2[1], Current_Miles: car2[2], Miles_Remaining: car2[3], Destination_miles: car2[4], Schedule_leaving: car2[5] },
+    { Car_Type: car3[0], Registration: car3[1], Current_Miles: car3[2], Miles_Remaining: car3[3], Destination_miles: car3[4], Schedule_leaving: car3[5] },
+    { Car_Type: car4[0], Registration: car4[1], Current_Miles: car4[2], Miles_Remaining: car4[3], Destination_miles: car4[4], Schedule_leaving: car4[5] },
+    { Car_Type: car5[0], Registration: car5[1], Current_Miles: car5[2], Miles_Remaining: car5[3], Destination_miles: car5[4], Schedule_leaving: car5[5] },
+    { Car_Type: car6[0], Registration: car6[1], Current_Miles: car6[2], Miles_Remaining: car6[3], Destination_miles: car6[4], Schedule_leaving: car6[5] }
   ];
   
   function generateTableHead(table, data) {

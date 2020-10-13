@@ -83,34 +83,34 @@ if (car6[6] == true) {
 
 /*========================== Program Adapting 1 ===============================*/
 if (car1[6] == true) {
-  if (car1[7] < 250) { /* Checks that Car has reached its maximum miliage, if not register for charge */
+  if (car1[7] < car1[8]) { /* Checks that Car has reached its maximum miliage, if not register for charge */
       document.getElementById("reg1").style.backgroundColor = "green";
       car1[7] = car1[7] + 44; /* Once executed it adds 44 miles to current miles, as 1 hours charge = 44 miles added on */
-      if (car1[7] < 250) {
+      if (car1[7] < car1[8]) {
         document.getElementById("reg2").style.backgroundColor = "green";
         car1[7] = car1[7] + 44;
-        if (car1[7] < 250) {
+        if (car1[7] < car1[8]) {
           document.getElementById("reg3").style.backgroundColor = "green";
           car1[7] = car1[7] + 44;
-          if (car1[7] < 250) {
+          if (car1[7] < car1[8]) {
             document.getElementById("reg4").style.backgroundColor = "green";
             car1[7] = car1[7] + 44;
-            if (car1[7] < 250) {
+            if (car1[7] < car1[8]) {
               document.getElementById("reg5").style.backgroundColor = "green";
               car1[7] = car1[7] + 44;
-              if (car1[7] < 250) {
+              if (car1[7] < car1[8]) {
                 document.getElementById("reg6").style.backgroundColor = "green";
                 car1[7] = car1[7] + 44;
-                if (car1[7] < 250) {
+                if (car1[7] < car1[8]) {
                   document.getElementById("reg7").style.backgroundColor = "green";
                   car1[7] = car1[7] + 44;
-                  if (car1[7] < 250) {
+                  if (car1[7] < car1[8]) {
                     document.getElementById("reg8").style.backgroundColor = "green";
                     car1[7] = car1[7] + 44;
-                    if (car1[7] < 250) {
+                    if (car1[7] < car1[8]) {
                       document.getElementById("reg9").style.backgroundColor = "green";
                       car1[7] = car1[7] + 44;
-                      if (car1[7] < 250) {
+                      if (car1[7] < car1[8]) {
                         document.getElementById("reg10").style.backgroundColor = "green";
                         car1[7] = car1[7] + 44;
                       }
@@ -128,34 +128,34 @@ if (car1[6] == true) {
 
 /*========================== Program Adapting 2 ===============================*/
 if (car2[6] == true) {
-  if (car2[7] < 250) { /* Checks that Car has reached its maximum miliage, if not register for charge */
+  if (car2[7] < car2[8]) { /* Checks that Car has reached its maximum miliage, if not register for charge */
       document.getElementById("reg11").style.backgroundColor = "green";
       car2[7] = car2[7] + 44; /* Once executed it adds 44 miles to current miles, as 1 hours charge = 44 miles added on */
-      if (car2[7] < 250) {
+      if (car2[7] < car2[8]) {
         document.getElementById("reg12").style.backgroundColor = "green";
         car2[7] = car2[7] + 44;
-        if (car2[7] < 250) {
+        if (car2[7] < car2[8]) {
           document.getElementById("reg13").style.backgroundColor = "green";
           car2[7] = car2[7] + 44;
-          if (car2[7] < 250) {
+          if (car2[7] < car2[8]) {
             document.getElementById("reg14").style.backgroundColor = "green";
             car2[7] = car2[7] + 44;
-            if (car2[7] < 250) {
+            if (car2[7] < car2[8]) {
               document.getElementById("reg15").style.backgroundColor = "green";
               car2[7] = car2[7] + 44;
-              if (car2[7] < 250) {
+              if (car2[7] < car2[8]) {
                 document.getElementById("reg16").style.backgroundColor = "green";
                 car2[7] = car2[7] + 44;
-                if (car2[7] < 250) {
+                if (car2[7] < car2[8]) {
                   document.getElementById("reg17").style.backgroundColor = "green";
                   car2[7] = car2[7] + 44;
-                  if (car2[7] < 250) {
+                  if (car2[7] < car2[8]) {
                     document.getElementById("reg18").style.backgroundColor = "green";
                     car2[7] = car2[7] + 44;
-                    if (car2[7] < 250) {
+                    if (car2[7] < car2[8]) {
                       document.getElementById("reg19").style.backgroundColor = "green";
                       car2[7] = car2[7] + 44;
-                      if (car2[7] < 250) {
+                      if (car2[7] < car2[8]) {
                         document.getElementById("reg20").style.backgroundColor = "green";
                         car2[7] = car2[7] + 44;
                       }
@@ -173,34 +173,34 @@ if (car2[6] == true) {
 
 /*========================== Program Adapting 3 ===============================*/
 if (car3[6] == true) {
-  if (car3[7] < 250) { /* Checks that Car has reached its maximum miliage, if not register for charge */
+  if (car3[7] < car3[8]) { /* Checks that Car has reached its maximum miliage, if not register for charge */
       document.getElementById("reg21").style.backgroundColor = "green";
       car3[7] = car3[7] + 44; /* Once executed it adds 44 miles to current miles, as 1 hours charge = 44 miles added on */
-      if (car3[7] < 250) {
+      if (car3[7] < car3[8]) {
         document.getElementById("reg22").style.backgroundColor = "green";
         car3[7] = car3[7] + 44;
-        if (car3[7] < 250) {
+        if (car3[7] < car3[8]) {
           document.getElementById("reg23").style.backgroundColor = "green";
           car3[7] = car3[7] + 44;
-          if (car3[7] < 250) {
+          if (car3[7] < car3[8]) {
             document.getElementById("reg24").style.backgroundColor = "green";
             car3[7] = car3[7] + 44;
-            if (car3[7] < 250) {
+            if (car3[7] < car3[8]) {
               document.getElementById("reg25").style.backgroundColor = "green";
               car3[7] = car3[7] + 44;
-              if (car3[7] < 250) {
+              if (car3[7] < car3[8]) {
                 document.getElementById("reg26").style.backgroundColor = "green";
                 car3[7] = car3[7] + 44;
-                if (car3[7] < 250) {
+                if (car3[7] < car3[8]) {
                   document.getElementById("reg27").style.backgroundColor = "green";
                   car3[7] = car3[7] + 44;
-                  if (car3[7] < 250) {
+                  if (car3[7] < car3[8]) {
                     document.getElementById("reg28").style.backgroundColor = "green";
                     car3[7] = car3[7] + 44;
-                    if (car3[7] < 250) {
+                    if (car3[7] < car3[8]) {
                       document.getElementById("reg29").style.backgroundColor = "green";
                       car3[7] = car3[7] + 44;
-                      if (car3[7] < 250) {
+                      if (car3[7] < car3[8]) {
                         document.getElementById("reg30").style.backgroundColor = "green";
                         car3[7] = car3[7] + 44;
                       }
@@ -218,34 +218,34 @@ if (car3[6] == true) {
 
 /*========================== Program Adapting 4 ===============================*/
 if (car4[6] == true) {
-  if (car4[7] < 250) { /* Checks that Car has reached its maximum miliage, if not register for charge */
+  if (car4[7] < car4[8]) { /* Checks that Car has reached its maximum miliage, if not register for charge */
       document.getElementById("reg31").style.backgroundColor = "green";
       car4[7] = car4[7] + 44; /* Once executed it adds 44 miles to current miles, as 1 hours charge = 44 miles added on */
-      if (car4[7] < 250) {
+      if (car4[7] < car4[8]) {
         document.getElementById("reg32").style.backgroundColor = "green";
         car4[7] = car4[7] + 44;
-        if (car4[7] < 250) {
+        if (car4[7] < car4[8]) {
           document.getElementById("reg33").style.backgroundColor = "green";
           car4[7] = car4[7] + 44;
-          if (car4[7] < 250) {
+          if (car4[7] < car4[8]) {
             document.getElementById("reg34").style.backgroundColor = "green";
             car4[7] = car4[7] + 44;
-            if (car4[7] < 250) {
+            if (car4[7] < car4[8]) {
               document.getElementById("reg35").style.backgroundColor = "green";
               car4[7] = car4[7] + 44;
-              if (car4[7] < 250) {
+              if (car4[7] < car4[8]) {
                 document.getElementById("reg36").style.backgroundColor = "green";
                 car4[7] = car4[7] + 44;
-                if (car4[7] < 250) {
+                if (car4[7] < car4[8]) {
                   document.getElementById("reg37").style.backgroundColor = "green";
                   car4[7] = car4[7] + 44;
-                  if (car4[7] < 250) {
+                  if (car4[7] < car4[8]) {
                     document.getElementById("reg38").style.backgroundColor = "green";
                     car4[7] = car4[7] + 44;
-                    if (car4[7] < 250) {
+                    if (car4[7] < car4[8]) {
                       document.getElementById("reg39").style.backgroundColor = "green";
                       car4[7] = car4[7] + 44;
-                      if (car4[7] < 250) {
+                      if (car4[7] < car4[8]) {
                         document.getElementById("reg40").style.backgroundColor = "green";
                         car4[7] = car4[7] + 44;
                       }
@@ -263,34 +263,34 @@ if (car4[6] == true) {
 
 /*========================== Program Adapting 5 ===============================*/
 if (car5[6] == true) {
-  if (car5[7] < 250) { /* Checks that Car has reached its maximum miliage, if not register for charge */
+  if (car5[7] < car5[8]) { /* Checks that Car has reached its maximum miliage, if not register for charge */
       document.getElementById("reg41").style.backgroundColor = "green";
       car5[7] = car5[7] + 44; /* Once executed it adds 44 miles to current miles, as 1 hours charge = 44 miles added on */
-      if (car5[7] < 250) {
+      if (car5[7] < car5[8]) {
         document.getElementById("reg42").style.backgroundColor = "green";
         car5[7] = car5[7] + 44;
-        if (car5[7] < 250) {
+        if (car5[7] < car5[8]) {
           document.getElementById("reg43").style.backgroundColor = "green";
           car5[7] = car5[7] + 44;
-          if (car5[7] < 250) {
+          if (car5[7] < car5[8]) {
             document.getElementById("reg44").style.backgroundColor = "green";
             car5[7] = car5[7] + 44;
-            if (car5[7] < 250) {
+            if (car5[7] < car5[8]) {
               document.getElementById("reg45").style.backgroundColor = "green";
               car5[7] = car5[7] + 44;
-              if (car5[7] < 250) {
+              if (car5[7] < car5[8]) {
                 document.getElementById("reg46").style.backgroundColor = "green";
                 car5[7] = car5[7] + 44;
-                if (car5[7] < 250) {
+                if (car5[7] < car5[8]) {
                   document.getElementById("reg47").style.backgroundColor = "green";
                   car5[7] = car5[7] + 44;
-                  if (car5[7] < 250) {
+                  if (car5[7] < car5[8]) {
                     document.getElementById("reg48").style.backgroundColor = "green";
                     car5[7] = car5[7] + 44;
-                    if (car5[7] < 250) {
+                    if (car5[7] < car5[8]) {
                       document.getElementById("reg49").style.backgroundColor = "green";
                       car5[7] = car5[7] + 44;
-                      if (car5[7] < 250) {
+                      if (car5[7] < car5[8]) {
                         document.getElementById("reg50").style.backgroundColor = "green";
                         car5[7] = car5[7] + 44;
                       }
@@ -308,34 +308,34 @@ if (car5[6] == true) {
 
 /*========================== Program Adapting 6 ===============================*/
 if (car6[6] == true) {
-  if (car6[7] < 250) { /* Checks that Car has reached its maximum miliage, if not register for charge */
+  if (car6[7] < car6[8]) { /* Checks that Car has reached its maximum miliage, if not register for charge */
       document.getElementById("reg51").style.backgroundColor = "green";
       car6[7] = car6[7] + 44; /* Once executed it adds 44 miles to current miles, as 1 hours charge = 44 miles added on */
-      if (car6[7] < 250) {
+      if (car6[7] < car6[8]) {
         document.getElementById("reg52").style.backgroundColor = "green";
         car6[7] = car6[7] + 44;
-        if (car6[7] < 250) {
+        if (car6[7] < car6[8]) {
           document.getElementById("reg53").style.backgroundColor = "green";
           car6[7] = car6[7] + 44;
-          if (car6[7] < 250) {
+          if (car6[7] < car6[8]) {
             document.getElementById("reg54").style.backgroundColor = "green";
             car6[7] = car6[7] + 44;
-            if (car6[7] < 250) {
+            if (car6[7] < car6[8]) {
               document.getElementById("reg55").style.backgroundColor = "green";
               car6[7] = car6[7] + 44;
-              if (car6[7] < 250) {
+              if (car6[7] < car6[8]) {
                 document.getElementById("reg56").style.backgroundColor = "green";
                 car6[7] = car6[7] + 44;
-                if (car6[7] < 250) {
+                if (car6[7] < car6[8]) {
                   document.getElementById("reg57").style.backgroundColor = "green";
                   car6[7] = car6[7] + 44;
-                  if (car6[7] < 250) {
+                  if (car6[7] < car6[8]) {
                     document.getElementById("reg58").style.backgroundColor = "green";
                     car6[7] = car6[7] + 44;
-                    if (car6[7] < 250) {
+                    if (car6[7] < car6[8]) {
                       document.getElementById("reg59").style.backgroundColor = "green";
                       car6[7] = car6[7] + 44;
-                      if (car6[7] < 250) {
+                      if (car6[7] < car6[8]) {
                         document.getElementById("reg60").style.backgroundColor = "green";
                         car6[7] = car6[7] + 44;
                       }
