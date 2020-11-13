@@ -18,23 +18,6 @@
     <h1>Solar Cars Database</h1>
     <br>
     <div class="form-container" id="location">
-        <!--================ Database Selection Area =======================-->
-        <select>
-            <option>Select a Car Details</option>
-            <option value="car1">Car Deatils 1</option>
-            <option value="car2">Car Deatils 2</option>
-            <option value="car3">Car Deatils 3</option>
-            <option value="car4">Car Deatils 4</option>
-            <option value="car5">Car Deatils 5</option>
-            <option value="car6">Car Deatils 6</option>
-        </select>
-        <!--================================================================-->
-
-        <!--=================== Car Name Area ==============================-->
-        <label for="fname">Car Type:</label>
-        <input type="text" id="cname" name="cname">
-        <!--================================================================-->
-
         <!--================== Car Number Area =============================-->
         <label for="lname">Registration Number:</label>
         <input type="text" id="rnumber" name="rnumber" maxlength="7">
@@ -53,6 +36,19 @@
         <!--================= Leaving Time Area ============================-->
         <label for="lname">Scheduled Leaving Time:</label>
         <input type="time" id="leavingTime" name="leavingTime" title="Remember! to remove 30 minutes from Arrival Time!">
+        <!--================================================================-->
+
+        <!--================ Database Selection Area =======================-->
+        <label for="lname">Select an area you wish to store <br>your information:</label>
+        <select>
+            <option>Select</option>
+            <option value="car1">Row 1</option>
+            <option value="car2">Row 2</option>
+            <option value="car3">Row 3</option>
+            <option value="car4">Row 4</option>
+            <option value="car5">Row 5</option>
+            <option value="car6">Row 6</option>
+        </select>
         <!--================================================================-->
 
         <!--=================== Hidden Button Area =========================-->
@@ -90,7 +86,7 @@
     <h1>Car Charging Schedule</h1>
     <table id="tables">
         <tr>
-            <th>Car Number:</th>
+            <th>Car Registration:</th>
             <th>Does need charge?</th>
             <th>7 - 8</th>
             <th>8 - 9</th>

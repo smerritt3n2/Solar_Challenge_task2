@@ -22,32 +22,32 @@
 
  /*=========================== Data Checking Area =============================*/
 if (car1 == null) { /* Checks that Array is "real" if not then create array for function to use */
-  car1 = ["", "", "", "", "", ""];
+  car1 = ["", "", "", "", ""];
 }
 if (car2 == null) {
-  car2 = ["", "", "", "", "", ""];
+  car2 = ["", "", "", "", ""];
 }
 if (car3 == null) {
-  car3 = ["", "", "", "", "", ""];
+  car3 = ["", "", "", "", ""];
 }
 if (car4 == null) {
-  car4 = ["", "", "", "", "", ""];
+  car4 = ["", "", "", "", ""];
 }
 if (car5 == null) {
-  car5 = ["", "", "", "", "", ""];
+  car5 = ["", "", "", "", ""];
 }
 if (car6 == null) {
-  car6 = ["", "", "", "", "", ""];
+  car6 = ["", "", "", "", ""];
 }
  /*============================================================================*/
 
  let carlist = [
-    { "Car Type": car1[0], "Registration": car1[1], "Current Miles": car1[2], "Miles Remaining": car1[3], "Destination Miles": car1[4], "Schedule leaving": car1[5]}, /* Displays the data stored in the Array that is within "Column 1" to "Column 4" */
-    { Car_Type: car2[0], Registration: car2[1], Current_Miles: car2[2], Miles_Remaining: car2[3], Destination_miles: car2[4], Schedule_leaving: car2[5] },
-    { Car_Type: car3[0], Registration: car3[1], Current_Miles: car3[2], Miles_Remaining: car3[3], Destination_miles: car3[4], Schedule_leaving: car3[5] },
-    { Car_Type: car4[0], Registration: car4[1], Current_Miles: car4[2], Miles_Remaining: car4[3], Destination_miles: car4[4], Schedule_leaving: car4[5] },
-    { Car_Type: car5[0], Registration: car5[1], Current_Miles: car5[2], Miles_Remaining: car5[3], Destination_miles: car5[4], Schedule_leaving: car5[5] },
-    { Car_Type: car6[0], Registration: car6[1], Current_Miles: car6[2], Miles_Remaining: car6[3], Destination_miles: car6[4], Schedule_leaving: car6[5] }
+    { "Car Registration": car1[0], "Current Miles Done Today": car1[1], "Miles Remaining Within Car": car1[2], "Miles Needed To Reach Destination": car1[3], "Schedule leaving": car1[4]}, /* Displays the data stored in the Array that is within "Column 1" to "Column 4" */
+    { Registration: car2[0], Current_Miles: car2[1], Miles_Remaining: car2[2], Destination_miles: car2[3], Schedule_leaving: car2[4] },
+    { Registration: car3[0], Current_Miles: car3[1], Miles_Remaining: car3[2], Destination_miles: car3[3], Schedule_leaving: car3[4] },
+    { Registration: car4[0], Current_Miles: car4[1], Miles_Remaining: car4[2], Destination_miles: car4[3], Schedule_leaving: car4[4] },
+    { Registration: car5[0], Current_Miles: car5[1], Miles_Remaining: car5[2], Destination_miles: car5[3], Schedule_leaving: car5[4] },
+    { Registration: car6[0], Current_Miles: car6[1], Miles_Remaining: car6[2], Destination_miles: car6[3], Schedule_leaving: car6[4] }
   ];
   
   function generateTableHead(table, data) {

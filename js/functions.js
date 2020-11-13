@@ -5,14 +5,13 @@
 /*================================================ Car Array Section 1 ==================================================*/
 function submit1() {
 
-    var name = document.getElementById('cname').value;
     var number = document.getElementById('rnumber').value;
     var miles = document.getElementById('cmiles').value;
     var leaving = document.getElementById('leavingTime').value;
     var destion = document.getElementById('dmiles').value;
 
     /*=========================== Data Checking Area =============================*/
-    if (document.getElementById('cname').value == "" || document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
+    if ( document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
         alert("Please Fill in All text Fields");
         window.location.reload();
     } else if (number.length > 7) { /* Check that Registration is valid, if not then inform online user */
@@ -32,7 +31,7 @@ function submit1() {
         /*=============================================================================*/
 
         /*====================== Stores Variable in Local Storage =====================*/
-        var car1 = [name, number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion];
+        var car1 = [number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion, "250"];
 
         var carDetails1 = JSON.stringify(car1);
         localStorage.setItem('car1', carDetails1);
@@ -50,14 +49,13 @@ function submit1() {
 /*================================================ Car Array Section 2 ==================================================*/
 function submit2() {
 
-    var name = document.getElementById('cname').value;
     var number = document.getElementById('rnumber').value;
     var miles = document.getElementById('cmiles').value;
     var leaving = document.getElementById('leavingTime').value;
     var destion = document.getElementById('dmiles').value;
 
     /*=========================== Data Checking Area =============================*/
-    if (document.getElementById('cname').value == "" || document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
+    if ( document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
         alert("Please Fill in All text Fields");
         window.location.reload();
     } else if (number.length > 7) { /* Check that Registration is valid, if not then inform online user */
@@ -77,7 +75,7 @@ function submit2() {
         /*=============================================================================*/
 
         /*====================== Stores Variable in Local Storage =====================*/
-        var car2 = [name, number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion];
+        var car2 = [number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion, "250"];
 
         var carDetails2 = JSON.stringify(car2);
         localStorage.setItem('car2', carDetails2);
@@ -93,14 +91,13 @@ function submit2() {
 /*================================================ Car Array Section 3 ==================================================*/
 function submit3() {
 
-    var name = document.getElementById('cname').value;
     var number = document.getElementById('rnumber').value;
     var miles = document.getElementById('cmiles').value;
     var leaving = document.getElementById('leavingTime').value;
     var destion = document.getElementById('dmiles').value;
 
     /*=========================== Data Checking Area =============================*/
-    if (document.getElementById('cname').value == "" || document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
+    if ( document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
         alert("Please Fill in All text Fields");
         window.location.reload();
     } else if (number.length > 7) { /* Check that Registration is valid, if not then inform online user */
@@ -120,7 +117,7 @@ function submit3() {
         /*=============================================================================*/
 
         /*====================== Stores Variable in Local Storage =====================*/
-        var car3 = [name, number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion];
+        var car3 = [number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion, "250"];
 
         var carDetails3 = JSON.stringify(car3);
         localStorage.setItem('car3', carDetails3);
@@ -136,14 +133,13 @@ function submit3() {
 /*================================================ Car Array Section 4 ==================================================*/
 function submit4() {
 
-    var name = document.getElementById('cname').value;
     var number = document.getElementById('rnumber').value;
     var miles = document.getElementById('cmiles').value;
     var leaving = document.getElementById('leavingTime').value;
     var destion = document.getElementById('dmiles').value;
 
     /*=========================== Data Checking Area =============================*/
-    if (document.getElementById('cname').value == "" || document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
+    if ( document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
         alert("Please Fill in All text Fields");
         window.location.reload();
     } else if (number.length > 7) { /* Check that Registration is valid, if not then inform online user */
@@ -163,7 +159,7 @@ function submit4() {
         /*=============================================================================*/
 
         /*====================== Stores Variable in Local Storage =====================*/
-        var car4 = [name, number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion];
+        var car4 = [number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion, "250"];
 
         var carDetails4 = JSON.stringify(car4);
         localStorage.setItem('car4', carDetails4);
@@ -179,14 +175,13 @@ function submit4() {
 /*================================================ Car Array Section 5 ==================================================*/
 function submit5() {
     
-    var name = document.getElementById('cname').value;
     var number = document.getElementById('rnumber').value;
     var miles = document.getElementById('cmiles').value;
     var leaving = document.getElementById('leavingTime').value;
     var destion = document.getElementById('dmiles').value;
 
     /*=========================== Data Checking Area =============================*/
-    if (document.getElementById('cname').value == "" || document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
+    if ( document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
         alert("Please Fill in All text Fields");
         window.location.reload();
     } else if (number.length > 7) { /* Check that Registration is valid, if not then inform online user */
@@ -206,7 +201,7 @@ function submit5() {
         /*=============================================================================*/
 
         /*====================== Stores Variable in Local Storage =====================*/
-        var car5 = [name, number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion];
+        var car5 = [number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion, "250"];
 
         var carDetails5 = JSON.stringify(car5);
         localStorage.setItem('car5', carDetails5);
@@ -222,14 +217,13 @@ function submit5() {
 /*================================================ Car Array Section 6 ==================================================*/
  function submit6() {
 
-    var name = document.getElementById('cname').value;
     var number = document.getElementById('rnumber').value;
     var miles = document.getElementById('cmiles').value;
     var leaving = document.getElementById('leavingTime').value;
     var destion = document.getElementById('dmiles').value;
 
     /*=========================== Data Checking Area =============================*/
-    if (document.getElementById('cname').value == "" || document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
+    if ( document.getElementById('rnumber').value == "" || document.getElementById('cmiles').value == "" || document.getElementById('leavingTime').value == "" || document.getElementById('dmiles').value == "") {
         alert("Please Fill in All text Fields");
         window.location.reload();
     } else if (number.length > 7) { /* Check that Registration is valid, if not then inform online user */
@@ -249,7 +243,7 @@ function submit5() {
         /*=============================================================================*/
 
         /*====================== Stores Variable in Local Storage =====================*/
-        var car6 = [name, number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion];
+        var car6 = [number, miles + "m", cmiles + "m", destion + "m", leaving, charge, cmiles, destion, "250"];
 
         var carDetails6 = JSON.stringify(car6);
         localStorage.setItem('car6', carDetails6);
