@@ -1,0 +1,87 @@
+/*===========================================================
+* Settings and Styles for the "Table Section of the web-page
+============================================================*/
+
+:root {
+    --white: #fff;
+    --gray: #dddddd;
+    --gray80: #ccc;
+    --blue: #0000ee;
+    --red: #FF0000;
+    --orange: #FFA62E;
+    --green: #008000;
+}
+
+body > table{
+    width: 80%;
+    background-color: var(--white);
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 1px solid var(--gray);
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: var(--gray);
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--gray80);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: var(--gray);
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--blue);
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   var(--red);
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+.orange{
+    background-color: var(--orange);
+}
+
+.confirm tr td {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.left {float: left;}
+
+.right {float: right;}

@@ -1,0 +1,8 @@
+/*========================================================================================
+* Applies Global Elements to web-page + Applies settings/ styles stored in "Partials"
+=========================================================================================*/
+body {
+    background-image: url(https://pics.freeartbackgrounds.com/fullhd/Autumn_Mountain_Road_Background-1135.jpg);
+}
+
+@import "tables";

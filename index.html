@@ -1,140 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Solar Challenge - Task 1</title>
-    <!--==========================================================-->
-    <Link rel="stylesheet" type="text/css" href="css/nmcss.css">
-    <script type="text/javascript" src="js/functions.js"></script>
-    <!--==========================================================-->
-    <!--==========================================================-->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!--==========================================================-->
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="css/nmcss.css">
 </head>
+
 <body>
-
-    <h1>Solar Cars Database</h1>
-    <br>
-    <div class="form-container" id="location">
-        <!--================== Car Number Area =============================-->
-        <label for="lname">Registration Number:</label>
-        <input type="text" id="rnumber" name="rnumber" maxlength="7">
-        <!--================================================================-->
-
-        <!--=================== Car Miles Area =============================-->
-        <label for="lname">Current miles done today:</label>
-        <input type="text" id="cmiles" name="cmiles">
-        <!--================================================================-->
-
-        <!--=============== Destination Miles Area =========================-->
-        <label for="lname">Destination miles:</label>
-        <input type="text" id="dmiles" name="dmiles">
-        <!--================================================================-->
-
-        <!--================= Leaving Time Area ============================-->
-        <label for="lname">Scheduled Leaving Time:</label>
-        <input type="time" id="leavingTime" name="leavingTime" title="Remember! to remove 30 minutes from Arrival Time!">
-        <!--================================================================-->
-
-        <!--================ Database Selection Area =======================-->
-        <label for="lname">Select an area you wish to store <br>your information:</label>
-        <select>
-            <option>Select</option>
-            <option value="car1">Row 1</option>
-            <option value="car2">Row 2</option>
-            <option value="car3">Row 3</option>
-            <option value="car4">Row 4</option>
-            <option value="car5">Row 5</option>
-            <option value="car6">Row 6</option>
-        </select>
-        <!--================================================================-->
-
-        <!--=================== Hidden Button Area =========================-->
-        <div class="car1 box">
-            <button onclick="submit1()">Submit</button>
-        </div>
-        <div class="car2 box">
-            <button onclick="submit2()">Submit</button>
-        </div>
-        <div class="car3 box">
-            <button onclick="submit3()">Submit</button>
-        </div>
-        <div class="car4 box">
-            <button onclick="submit4()">Submit</button>
-        </div>
-        <div class="car5 box">
-            <button onclick="submit5()">Submit</button>
-        </div>
-        <div class="car6 box">
-            <button onclick="submit6()">Submit</button>
-        </div>
-        <!--================================================================-->
-    </div>
-    <br>
-    <h1>Electric Car Database</h1>
-    <!--==================== Database Table Area ===========================-->
     <table>
-        
+        <tr>
+            <td>
+                <!-- ============================== Form Section ==================================== -->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Registration Number *</label><label class="validation-error hide" id="regValidationError">This field is required.</label>
+                        <input type="text" name="reg" id="reg" maxlength="7">
+                    </div>
+                    <div>
+                        <label>Current Range Remaining *</label><label class="validation-error hide" id="curRangeValidationError">Number Values Only and cannot be greater than 250.</label>
+                        <input type="number" name="curRange" id="curRange">
+                    </div>
+                    <div>
+                        <label>Destination miles *</label><label class="validation-error hide" id="destValidationError">Number Values Only and cannot be greater than 250.</label>
+                        <input type="number" name="desMile" id="desMile">
+                    </div>
+                    <div>
+                        <label>Scheduled Leaving Time *</label>
+                        <input type="time" name="leaTime" id="leaTime" title="Remember! to remove 30 minutes from Arrival Time!"><label class="validation-error hide" id="timeValidationError">Please make sure time is within working hours, 07:00am to 05:00pm.</label>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <!-- ================================================================================ -->
+            </td>
+            <!--================================== Car Table =========================================-->
+            <td>
+                <table class="list" id="carList">
+                    <h1>Electric Car Database</h1>
+                    <thead>
+                        <tr>
+                            <th class="orange">Registration Number</th>
+                            <th class="orange">Current Range Remaining</th>
+                            <th class="orange">Destination miles</th>
+                            <th class="orange">Scheduled Leaving Time</th>
+                            <th class="orange"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data Input from users submition -->
+                    </tbody>
+                </table>
+            </td>
+            <!--======================================================================================-->
+        </tr>
     </table>
-
+    <br>
+    <table class="hide" id="revealTable">
+        <tr>
+            <!--================================== Charging Table ===================================-->
+            <td>
+                <table class="list" id="carCharge">
+                    <h1>Car Charging Schedule</h1>
+                    <thead>
+                        <tr>
+                            <th class="orange">Car Registration</th>
+                            <th class="orange">Does it need charge?</th>
+                            <th class="orange"><span class="left">07:00am</span> <span class="right">08:00am</span></th>
+                            <th class="orange"><span class="right">09:00am</span></th>
+                            <th class="orange"><span class="right">10:00am</span></th>
+                            <th class="orange"><span class="right">11:00am</span></th>
+                            <th class="orange"><span class="right">12:00am</span></th>
+                            <th class="orange"><span class="right">01:00pm</span></th>
+                            <th class="orange"><span class="right">02:00pm</span></th>
+                            <th class="orange"><span class="right">03:00pm</span></th>
+                            <th class="orange"><span class="right">04:00pm</span></th>
+                            <th class="orange"><span class="right">05:00pm</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="confirm">
+                        <!-- Data Input from users submition -->
+                    </tbody>
+                </table>
+            </td>
+            <!--======================================================================================-->
+        </tr>
+    </table>
     <script src="js/table.js"></script>
-    <!--====================================================================-->
-
-    <!--===================== Charging Schedule Area =======================-->
-    <h1>Car Charging Schedule</h1>
-    <table id="tables">
-        <tr>
-            <th>Car Registration:</th>
-            <th>Does need charge?</th>
-            <th>7 - 8</th>
-            <th>8 - 9</th>
-            <th>9 - 10</th>
-            <th>10 - 11</th>
-            <th>11 - 12</th>
-            <th>12 - 13</th>
-            <th>13 - 14</th>
-            <th>14 - 15</th>
-            <th>15 - 16</th>
-            <th>16 - 17</th>
-        </tr>
-        <tr>
-            <td></td><td></td><td id="reg1"></td><td id="reg2"></td><td id="reg3"></td><td id="reg4"></td><td id="reg5"></td><td id="reg6"></td><td id="reg7"></td><td id="reg8"></td><td id="reg9"></td><td id="reg10"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td id="reg11"></td><td id="reg12"></td><td id="reg13"></td><td id="reg14"></td><td id="reg15"></td><td id="reg16"></td><td id="reg17"></td><td id="reg18"></td><td id="reg19"></td><td id="reg20"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td id="reg21"></td><td id="reg22"></td><td id="reg23"></td><td id="reg24"></td><td id="reg25"></td><td id="reg26"></td><td id="reg27"></td><td id="reg28"></td><td id="reg29"></td><td id="reg30"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td id="reg31"></td><td id="reg32"></td><td id="reg33"></td><td id="reg34"></td><td id="reg35"></td><td id="reg36"></td><td id="reg37"></td><td id="reg38"></td><td id="reg39"></td><td id="reg40"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td id="reg41"></td><td id="reg42"></td><td id="reg43"></td><td id="reg44"></td><td id="reg45"></td><td id="reg46"></td><td id="reg47"></td><td id="reg48"></td><td id="reg49"></td><td id="reg50"></td>
-        </tr>
-        <tr>
-            <td></td><td></td><td id="reg51"></td><td id="reg52"></td><td id="reg53"></td><td id="reg54"></td><td id="reg55"></td><td id="reg56"></td><td id="reg57"></td><td id="reg58"></td><td id="reg59"></td><td id="reg60"></td>
-        </tr>
-    </table><br>
-
     <script src="js/chargingTable.js"></script>
-    <!--====================================================================-->
-    <script>
-        $(document).ready(function(){
-            $("select").change(function(){
-                $(this).find("option:selected").each(function(){
-                    var optionValue = $(this).attr("value");
-                    if(optionValue){
-                        $(".box").not("." + optionValue).hide();
-                        $("." + optionValue).show(); /* Reveal the Element that is selected */
-                    } else{
-                        $(".box").hide(); /* Hides the Element that isn't selected */
-                    }
-                });
-            }).change();
-        });
-    </script>
 </body>
+
 </html>
